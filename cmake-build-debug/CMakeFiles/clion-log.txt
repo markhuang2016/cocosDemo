@@ -1,0 +1,19 @@
+"E:\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\ClionProject\Demo
+-- PROJECT_NAME:Demo
+-- PROJECT_SOURCE_DIR:D:/ClionProject/Demo
+-- COCOS2DX_ROOT_PATH:D:/ClionProject/Demo/cocos2d
+-- CMAKE_MODULE_PATH:D:/ClionProject/Demo/cocos2d/cmake/Modules/
+-- PROJECT_BINARY_DIR:D:/ClionProject/Demo/cmake-build-debug
+-- ENGINE_BINARY_PATH:D:/ClionProject/Demo/cmake-build-debug/engine
+-- CMAKE_GENERATOR: MinGW Makefiles
+-- CMAKE_BUILD_TYPE: Debug
+CMake Error at cocos2d/cmake/Modules/CocosConfigDefine.cmake:87 (message):
+  please using Windows MSVC compile cocos2d-x project, support other compile
+  tools not yet
+Call Stack (most recent call first):
+  cocos2d/cmake/Modules/CocosBuildSet.cmake:36 (include)
+  CMakeLists.txt:35 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/ClionProject/Demo/cmake-build-debug/CMakeFiles/CMakeOutput.log".
