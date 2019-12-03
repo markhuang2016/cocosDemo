@@ -23,8 +23,8 @@
  ****************************************************************************/
 
 #include "HelloWorldScene.h"
-#include "SimpleAudioEngine.h"
 #include "StartScene.h"
+#include "SpriteTest.h"
 
 USING_NS_CC;
 
@@ -54,15 +54,18 @@ bool HelloWorld::init() {
     //    you may modify it.
 
     // add a "close" icon to exit the progress. it's an autorelease object
-StartScene::create()
-    auto closeItem = MenuItemImage::create(
+//    auto  *scene =StartScene::create()->createScene();
+    MenuItemImage *closeItem;
+    closeItem = MenuItemImage::create(
             "CloseNormal.png",
             "CloseSelected.png",
-            [](Object *object) {
-                CCLOG("%s", "点击按钮"
-
-                );
-
+            [this,visibleSize](Object *object) {
+                CCLOG("%s", "点击按钮");
+//                Director::getInstance()->replaceScene(StartScene::createScene());
+                auto b=SpriteTest::createO();
+                b->setPosition(visibleSize);
+                this->addChild(b);
+//                Director::getInstance()->replaceScene(scene);
             });
 
     if (closeItem == nullptr ||
